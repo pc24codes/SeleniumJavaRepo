@@ -9,7 +9,10 @@ import io.cucumber.testng.CucumberOptions;
                 "json:target/cucumber-reports/cucumber.json"
         },
         features= {"src/test/resources/features"},
-        glue={"com.sample.StepDefinitions"}
+        glue={"com.sample"},
+        tags = "@SmokeTest",
+        monochrome = true
+
 )
 
 public class TestRunner extends AbstractTestNGCucumberTests {

@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ed44097-cefd-4a18-95bf-fbff474b79c7" name="Changes" comment="Added Login feature and basic step defs">
+    <list default="true" id="8ed44097-cefd-4a18-95bf-fbff474b79c7" name="Changes" comment="Empty commit trial">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sample/PageObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sample/PropertiesReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/CommonFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/CommonFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/StepDefinitions/LoginStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/StepDefinitions/LoginStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/LoginFeature.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LoginFeature.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,20 +35,20 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "pc24codes"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;pc24codes&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/pc24codes/SeleniumJavaRepo.git",
-    "accountId": "538bf5ce-0336-4ef8-8c2b-0f41bd12d9ec"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/pc24codes/SeleniumJavaRepo.git&quot;,
+    &quot;accountId&quot;: &quot;538bf5ce-0336-4ef8-8c2b-0f41bd12d9ec&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -55,10 +63,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Cucumber Java.All Features in: JavaSelenium.executor": "Run",
+    "Cucumber Java.All Features in: test.executor": "Run",
+    "Cucumber Java.Scenario: User Logged in as Standard User.executor": "Run",
     "Cucumber Java.Scenario: User launches google.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.D:/SeleniumC#/JavaSelenium/testng.xml.executor": "Run",
+    "TestNG.TestRunner.executor": "Run",
     "git-widget-placeholder": "newChangesBranch",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "D:/SeleniumC#/JavaSelenium/src/main/java/com/seleniumjava/Main.java",
@@ -67,7 +78,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.D:/SeleniumC#/JavaSelenium/testng.xml">
+  <component name="RunManager" selected="Cucumber Java.Scenario: User Logged in as Standard User">
     <configuration name="All Features in: JavaSelenium" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$" />
@@ -86,14 +97,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User launches google" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="All Features in: test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginFeature.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test" />
+      <option name="GLUE" value="com.sample" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="JavaSelenium" />
-      <option name="NAME_FILTER" value="^User launches google$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User launches google$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User launches google" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="All Features in: test" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: User Logged in as Standard User" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginFeature.feature" />
+      <option name="GLUE" value="com.sample" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="JavaSelenium" />
+      <option name="NAME_FILTER" value="^User Logged in as Standard User$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User Logged in as Standard User$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User Logged in as Standard User" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -115,11 +146,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JavaSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sample" />
+      <option name="MAIN_CLASS_NAME" value="com.sample.TestRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: User Logged in as Standard User" />
+        <item itemvalue="Cucumber Java.All Features in: test" />
+        <item itemvalue="TestNG.TestRunner" />
         <item itemvalue="TestNG.D:/SeleniumC#/JavaSelenium/testng.xml" />
         <item itemvalue="Cucumber Java.All Features in: JavaSelenium" />
-        <item itemvalue="Cucumber Java.Scenario: User launches google" />
       </list>
     </recent_temporary>
   </component>
@@ -148,11 +198,20 @@
       <option name="project" value="LOCAL" />
       <updated>1731965862859</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Empty commit trial">
+      <option name="closed" value="true" />
+      <created>1731966024225</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731966024225</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Login feature and basic step defs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Login feature and basic step defs" />
+    <MESSAGE value="Empty commit trial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Empty commit trial" />
   </component>
 </project>

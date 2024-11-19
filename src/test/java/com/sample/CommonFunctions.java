@@ -7,10 +7,11 @@ import org.openqa.selenium.edge.EdgeDriver;
 public class CommonFunctions {
 //    public static WebDriver driver;
 
-    public static WebDriver launchDriver(String browserName){
+    public static WebDriver launchDriver(){
         WebDriver driver;
+         String browserName = PropertiesReader.getProperty("browser");
 
-        switch(browserName.toLowerCase()){
+         switch(browserName.toLowerCase()){
                 case "chrome":
                     driver = new ChromeDriver();
                     break;
@@ -23,5 +24,4 @@ public class CommonFunctions {
             driver.manage().deleteAllCookies();
         return driver;
     }
-
 }
