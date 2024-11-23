@@ -1,6 +1,7 @@
 package com.sample.StepDefinitions;
 
 import com.sample.Hooks;
+import com.sample.JSONReader;
 import com.sample.PageObjects;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -62,6 +63,92 @@ public class LoginStepDefinitions {
         System.out.println("User logged into saucedemo");
     }
 
+    @Then("User enters the credentials for locked out user")
+    public void user_enters_the_credentials_for_locked_out_user() {
 
+        String userName = JSONReader.getValue("Locked Out User","username");
+        String password = JSONReader.getValue("Locked Out User","password");
+
+        objects.getUserNameBox().sendKeys(userName);
+        objects.getPasswordBox().sendKeys(password);
+        objects.getLoginButton().click();
+
+    }
+    @Then("User is unable to login as locked out user")
+    public void user_is_unable_to_login_as_locked_out_user() {
+        String errorMessage = objects.getErrorMessage().getText();
+        Assert.assertEquals(errorMessage, "Epic sadface: Sorry, this user has been locked out.", "The error displayed is incorrect!");
+
+    }
+
+    @Then("User adds all the products in cart")
+    public void user_adds_all_the_products_in_cart() {
+
+        objects.getBoltTshirtButton().click();
+        objects.getSauceLabsOnesie().click();
+        objects.getSauceLabsBackpack().click();
+        String CartValue = driver.findElement(By.xpath("//*[@class='shopping_cart_badge']")).getText();
+        System.out.println("Cart value: "+CartValue);
+
+    }
+    @Then("User verifies in the cart")
+    public void user_verifies_in_the_cart() {
+
+        objects.getCartButton().click();
+        String YourCartText = driver.findElement(By.xpath("//*[@class='title']")).getText();
+
+        Assert.assertEquals(YourCartText, "Your Cart", "User not redirected to Your cart");
+        System.out.println("User is in Your cart section!");
+
+
+    }
+
+    @Then("user removes the items from cart")
+    public void user_removes_the_items_from_cart() {
+
+        objects.getRemoveBackPack().click();
+        objects.getRemoveOnesie().click();
+        objects.getRemoveTshirt().click();
+
+    }
+
+    @Then("User enters the details in checkout")
+    public void user_enters_the_details_in_checkout() {
+
+        String firstName = JSONReader.getValue("User adds products","FirstName");
+        String lastName = JSONReader.getValue("User adds products","LastName");
+        String pinCode = JSONReader.getValue("User adds products","Pincode");
+
+        objects.getCheckOutButton().click();
+
+        objects.getFirstName().sendKeys(firstName);
+        objects.getLastname().sendKeys(lastName);
+        objects.getPinCode().sendKeys(pinCode);
+
+        objects.getContinueButton().click();
+
+    }
+    @Then("User verifies the pricing and itemlist")
+    public void user_verifies_the_pricing_and_itemlist() {
+
+        String OrderDeets = driver.findElement(By.xpath("//div[@class='summary_info']")).getText();
+        System.out.println(OrderDeets);
+
+        objects.getFinishButton().click();
+
+
+
+
+    }
+    @Then("User order is confirmed")
+    public void user_order_is_confirmed() throws InterruptedException {
+        Thread.sleep(2000);
+        if(objects.getConfirmationText().isDisplayed()) {
+            System.out.println("Order is confirmed!!!");
+        }
+    }
 
 }
+
+
+
