@@ -1,0 +1,18 @@
+{
+  "Standard User login": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "Locked Out User": {
+    "username": "locked_out_user",
+    "password": "secret_sauce"
+  },
+
+  "User adds products": {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "FirstName": "Alan",
+    "LastName": "Border",
+    "Pincode": "098651"
+  }
+}

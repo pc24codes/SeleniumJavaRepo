@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ed44097-cefd-4a18-95bf-fbff474b79c7" name="Changes" comment="Empty commit trial">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sample/PageObjects.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sample/PropertiesReader.java" afterDir="false" />
+    <list default="true" id="8ed44097-cefd-4a18-95bf-fbff474b79c7" name="Changes" comment="-Added new scenario, Pageobjects implementation,and Properties reader class&#10;-Amended the test config in TestNG">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sample/JSONReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/TestData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/CommonFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/CommonFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/PageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/PageObjects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/StepDefinitions/LoginStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/StepDefinitions/LoginStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/LoginFeature.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LoginFeature.feature" afterDir="false" />
@@ -62,10 +60,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.JSONReader.executor": "Run",
     "Cucumber Java.All Features in: JavaSelenium.executor": "Run",
     "Cucumber Java.All Features in: test.executor": "Run",
+    "Cucumber Java.Feature: LoginFeature.executor": "Run",
+    "Cucumber Java.Feature: Products.executor": "Run",
     "Cucumber Java.Scenario: User Logged in as Standard User.executor": "Run",
+    "Cucumber Java.Scenario: User adds products in the cart (1).executor": "Run",
+    "Cucumber Java.Scenario: User adds products in the cart and removes the product (1).executor": "Run",
+    "Cucumber Java.Scenario: User adds products in the cart and removes the product.executor": "Run",
+    "Cucumber Java.Scenario: User adds products in the cart.executor": "Run",
+    "Cucumber Java.Scenario: User adds the products and buys the products.executor": "Run",
     "Cucumber Java.Scenario: User launches google.executor": "Run",
+    "Cucumber Java.Scenario: User logged in as locked out user.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.D:/SeleniumC#/JavaSelenium/testng.xml.executor": "Run",
@@ -75,56 +82,19 @@
     "onboarding.tips.debug.path": "D:/SeleniumC#/JavaSelenium/src/main/java/com/seleniumjava/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
 }]]></component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: User Logged in as Standard User">
-    <configuration name="All Features in: JavaSelenium" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="JavaSelenium" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="All Features in: JavaSelenium" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All Features in: test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test" />
-      <option name="GLUE" value="com.sample" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="JavaSelenium" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="All Features in: test" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: User Logged in as Standard User" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: LoginFeature">
+    <configuration name="Feature: LoginFeature" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginFeature.feature" />
       <option name="GLUE" value="com.sample" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="JavaSelenium" />
-      <option name="NAME_FILTER" value="^User Logged in as Standard User$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User Logged in as Standard User$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User Logged in as Standard User" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: LoginFeature" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -136,40 +106,93 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/SeleniumC#/JavaSelenium/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User adds products in the cart (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginFeature.feature" />
+      <option name="GLUE" value="com.sample" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="JavaSelenium" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
+      <option name="NAME_FILTER" value="^User adds products in the cart$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User adds products in the cart$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User adds products in the cart" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User adds products in the cart and removes the product (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginFeature.feature" />
+      <option name="GLUE" value="com.sample" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="JavaSelenium" />
+      <option name="NAME_FILTER" value="^User adds products in the cart and removes the product$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User adds products in the cart and removes the product$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User adds products in the cart and removes the product" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sample.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.sample" />
-      <option name="MAIN_CLASS_NAME" value="com.sample.TestRunner" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: User adds products in the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Products.feature" />
+      <option name="GLUE" value="com.sample" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="JavaSelenium" />
+      <option name="NAME_FILTER" value="^User adds products in the cart$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User adds products in the cart$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User adds products in the cart" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: User adds the products and buys the products" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginFeature.feature" />
+      <option name="GLUE" value="com.sample" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="JavaSelenium" />
+      <option name="NAME_FILTER" value="^User adds the products and buys the products$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User adds the products and buys the products$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User adds the products and buys the products" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: User Logged in as Standard User" />
-        <item itemvalue="Cucumber Java.All Features in: test" />
-        <item itemvalue="TestNG.TestRunner" />
-        <item itemvalue="TestNG.D:/SeleniumC#/JavaSelenium/testng.xml" />
-        <item itemvalue="Cucumber Java.All Features in: JavaSelenium" />
+        <item itemvalue="Cucumber Java.Feature: LoginFeature" />
+        <item itemvalue="Cucumber Java.Scenario: User adds the products and buys the products" />
+        <item itemvalue="Cucumber Java.Scenario: User adds products in the cart and removes the product (1)" />
+        <item itemvalue="Cucumber Java.Scenario: User adds products in the cart (1)" />
+        <item itemvalue="Cucumber Java.Scenario: User adds products in the cart" />
       </list>
     </recent_temporary>
   </component>
@@ -206,12 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1731966024225</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="-Added new scenario, Pageobjects implementation,and Properties reader class&#10;-Amended the test config in TestNG">
+      <option name="closed" value="true" />
+      <created>1732046583478</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732046583478</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Login feature and basic step defs" />
     <MESSAGE value="Empty commit trial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Empty commit trial" />
+    <MESSAGE value="-Added new scenario, Pageobjects implementation,and Properties reader class&#10;-Amended the test config in TestNG" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Added new scenario, Pageobjects implementation,and Properties reader class&#10;-Amended the test config in TestNG" />
   </component>
 </project>
