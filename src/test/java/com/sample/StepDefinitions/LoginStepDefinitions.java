@@ -10,13 +10,16 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import com.sample.CommonFunctions;
+
+import java.util.List;
 
 public class LoginStepDefinitions {
 
     private WebDriver driver = Hooks.driver;
-    private PageObjects objects;
+    public PageObjects objects;
 
     @When("User launches google")
     public void user_launches_google() throws InterruptedException {
@@ -44,7 +47,7 @@ public class LoginStepDefinitions {
     }
     @Then("User enters the credentials")
     public void user_enters_the_credentials() throws InterruptedException {
-        objects = new PageObjects(driver);
+//        objects = new PageObjects(driver);
 
         objects.getUserNameBox().sendKeys("standard_user");
         objects.getPasswordBox().sendKeys("secret_sauce");
@@ -54,7 +57,7 @@ public class LoginStepDefinitions {
     @Then("User logs in to SauceDemo")
     public void user_logs_in_to_sauce_demo() throws InterruptedException {
 
-        objects = new PageObjects(driver);
+//        objects = new PageObjects(driver);
         String header = objects.getWebsiteHeader().getText();
 
         Assert.assertEquals(header, "Swag Labs", "User is not in homepage");
@@ -148,7 +151,32 @@ public class LoginStepDefinitions {
         }
     }
 
+    @Then("User sorts with AtoZ")
+    public void user_sorts_with_ato_z() {
+
+//        WebElement dropDown = driver.findElement(By.xpath("//select[@data-test='product-sort-container']"));
+//        Select sortDrop = new Select(dropDown);
+//
+//        dropDown.click();
+//        WebElement option = driver.findElement(By.xpath("//option[text()='Price (low to high)']"));
+//        option.click();
+//        List<WebElement> options = sortDrop.getOptions();
+//        for(WebElement option : options ) {
+//            System.out.println(option.getText());
+//        }
+
+
+    }
+    @Then("User sorts with ZtoA")
+    public void user_sorts_with_zto_a() {
+
+    }
+    @Then("User sorts with low to high")
+    public void user_sorts_with_low_to_high() {
+
+    }
+    @Then("User sorts with high to low")
+    public void user_sorts_with_high_to_low() {
+
+    }
 }
-
-
-

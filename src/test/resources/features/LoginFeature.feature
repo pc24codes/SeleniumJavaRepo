@@ -44,3 +44,14 @@ Feature: LoginFeature
       Then User enters the details in checkout
       Then User verifies the pricing and itemlist
       Then User order is confirmed
+
+      @SmokeTest
+      Scenario: User sorts the products in the homepage
+        When User launches SauceDemo
+        Then User enters the credentials
+        Then User logs in to SauceDemo
+        Then User sorts with AtoZ
+        Then User sorts with ZtoA
+        Then User sorts with low to high
+        Then User sorts with high to low
+

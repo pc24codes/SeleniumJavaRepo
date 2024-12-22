@@ -36,7 +36,7 @@ public class PageObjects {
     public static String continueButtonXpath = "//input[@id='continue']";
     public static String confirmationMessage = "//h2['Thank you for your order!']";
     public static String finishButton = "//button[@id='finish']";
-
+    public static String sortDropdown = "//select[@class='select_container']";
 
 
 
@@ -122,6 +122,10 @@ public class PageObjects {
 
     public WebElement getFinishButton() {
         return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(finishButton)));
+    }
+
+    public WebElement getSortDropDown() {
+        return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(sortDropdown)));
     }
 
 
