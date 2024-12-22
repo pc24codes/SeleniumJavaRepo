@@ -13,6 +13,7 @@ public class PropertiesReader {
             props = new Properties();
             FileInputStream fileInputStream= new FileInputStream("src/test/resources/config.properties");
             props.load(fileInputStream);
+            // empty commit
         } catch (IOException e){
             e.printStackTrace();
             throw new RuntimeException("Failed to load properties file");
