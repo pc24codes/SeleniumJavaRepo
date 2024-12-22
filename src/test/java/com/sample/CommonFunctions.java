@@ -2,6 +2,7 @@ package com.sample;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class CommonFunctions {
@@ -13,7 +14,10 @@ public class CommonFunctions {
 
          switch(browserName.toLowerCase()){
                 case "chrome":
-                    driver = new ChromeDriver();
+                    ChromeOptions options = new ChromeOptions();
+                    options.setAcceptInsecureCerts(true);
+                    options.addArguments("--headless");
+                    driver = new ChromeDriver(options);
                     break;
                 case "edge":
                     driver = new EdgeDriver();
