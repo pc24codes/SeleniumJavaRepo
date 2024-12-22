@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ed44097-cefd-4a18-95bf-fbff474b79c7" name="Changes" comment="changes to the dependencies for better CI/CD connectivity">
+    <list default="true" id="8ed44097-cefd-4a18-95bf-fbff474b79c7" name="Changes" comment="small changes to pom.xml. &#10;- added lombok support&#10;- ran the tests locally working fine.">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="NewChanges_v2" />
+        <entry key="$PROJECT_DIR$" value="branch_v3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,7 +87,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.D:/SeleniumC#/JavaSelenium/testng.xml.executor": "Run",
     "TestNG.TestRunner.executor": "Run",
-    "git-widget-placeholder": "newChanges__ver2",
+    "git-widget-placeholder": "branch__v3",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "D:/SeleniumC#/JavaSelenium/src/main/java/com/seleniumjava/Main.java",
     "project.structure.last.edited": "Project",
@@ -264,7 +263,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734866890380</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="small changes to pom.xml. &#10;- added lombok support&#10;- ran the tests locally working fine.">
+      <option name="closed" value="true" />
+      <created>1734867700536</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734867700536</updated>
+    </task>
+    <task id="LOCAL-00008" summary="small changes to pom.xml. &#10;- added lombok support&#10;- ran the tests locally working fine.">
+      <option name="closed" value="true" />
+      <created>1734867807592</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734867807592</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,6 +299,7 @@
     <MESSAGE value="-Added new scenario, Pageobjects implementation,and Properties reader class&#10;-Amended the test config in TestNG" />
     <MESSAGE value="Added Testdata file, reader class and new scenarios." />
     <MESSAGE value="changes to the dependencies for better CI/CD connectivity" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes to the dependencies for better CI/CD connectivity" />
+    <MESSAGE value="small changes to pom.xml. &#10;- added lombok support&#10;- ran the tests locally working fine." />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes to pom.xml. &#10;- added lombok support&#10;- ran the tests locally working fine." />
   </component>
 </project>
