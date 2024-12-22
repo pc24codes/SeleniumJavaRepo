@@ -29,7 +29,7 @@
                 <version>2.22.2</version>
                 <configuration>
                     <includes>
-                        <include>**/*Test.java</include> <!-- This will include all classes with *Test suffix -->
+                        <include>test/java/com.sample/TestRunner.java</include> <!-- This will include all classes with *Test suffix -->
                     </includes>
                     <useModulePath>false</useModulePath> <!-- For Java 9+ modules support -->
                 </configuration>
