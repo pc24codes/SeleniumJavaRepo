@@ -35,27 +35,12 @@
                     </includes>
                 </configuration>
             </plugin>
-
-<!--            &lt;!&ndash; Cucumber Maven Plugin to generate JSON report &ndash;&gt;-->
-<!--            <plugin>-->
-<!--                <groupId>io.cucumber</groupId>-->
-<!--                <artifactId>cucumber-maven-plugin</artifactId>-->
-<!--                <version>7.10.0</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <goals>-->
-<!--                            <goal>cucumber</goal>-->
-<!--                        </goals>-->
-<!--                        <configuration>-->
-<!--                            <plugin>-->
-<!--                                <name>json</name>-->
-<!--                                <file>target/cucumber.json</file> &lt;!&ndash; Ensure the JSON report is generated &ndash;&gt;-->
-<!--                            </plugin>-->
-<!--                        </configuration>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
         </plugins>
+            <resources>
+                <resource>
+                    <directory>src/test/resources</directory>
+                </resource>
+            </resources>
     </build>
 
 

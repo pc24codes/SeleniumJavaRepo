@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ed44097-cefd-4a18-95bf-fbff474b79c7" name="Changes" comment="config change in pom">
+    <list default="true" id="8ed44097-cefd-4a18-95bf-fbff474b79c7" name="Changes" comment="change to testrunner class for running jenkins pipeline. &#10;- commented the 'tags' line">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties.template" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/StepDefinitions/LoginStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/StepDefinitions/LoginStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,8 +311,19 @@
       <option name="project" value="LOCAL" />
       <updated>1734873456073</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="change to testrunner class for running jenkins pipeline. &#10;- commented the 'tags' line">
+      <option name="closed" value="true" />
+      <created>1734955810442</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1734955810442</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.template" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -335,6 +346,7 @@
     <MESSAGE value="empty commit to check jenkins" />
     <MESSAGE value="surefire plugin added for jenkins" />
     <MESSAGE value="config change in pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="config change in pom" />
+    <MESSAGE value="change to testrunner class for running jenkins pipeline. &#10;- commented the 'tags' line" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to testrunner class for running jenkins pipeline. &#10;- commented the 'tags' line" />
   </component>
 </project>
