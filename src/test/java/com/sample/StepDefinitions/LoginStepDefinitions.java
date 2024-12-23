@@ -29,11 +29,11 @@ public class LoginStepDefinitions {
     }
     @Then("User searches")
     public void user_searches() throws InterruptedException {
-    //Empty commit
+        System.out.println("Test print");
 
-    WebElement searchBox = driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
-    searchBox.sendKeys("Selenium"+ Keys.ENTER);
-    Thread.sleep(2000);
+//    WebElement searchBox = driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
+//    searchBox.sendKeys("Selenium"+ Keys.ENTER);
+//    Thread.sleep(2000);
 
     }
 

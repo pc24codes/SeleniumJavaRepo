@@ -23,19 +23,38 @@
                     </compilerArgs>
                 </configuration>
             </plugin>
+
+            <!-- Surefire plugin to run Cucumber tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
+                <version>3.5.2</version>
                 <configuration>
                     <includes>
-                        <include>test/java/com.sample/TestRunner.java</include> <!-- This will include all classes with *Test suffix -->
+                        <include>**/TestRunner.java</include> <!-- Correct path to your TestRunner class -->
                     </includes>
-                    <useModulePath>false</useModulePath> <!-- For Java 9+ modules support -->
                 </configuration>
             </plugin>
 
-
+<!--            &lt;!&ndash; Cucumber Maven Plugin to generate JSON report &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>io.cucumber</groupId>-->
+<!--                <artifactId>cucumber-maven-plugin</artifactId>-->
+<!--                <version>7.10.0</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>cucumber</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <plugin>-->
+<!--                                <name>json</name>-->
+<!--                                <file>target/cucumber.json</file> &lt;!&ndash; Ensure the JSON report is generated &ndash;&gt;-->
+<!--                            </plugin>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 

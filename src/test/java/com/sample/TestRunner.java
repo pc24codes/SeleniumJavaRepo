@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
         },
         features= {"src/test/resources/features"},
         glue={"com.sample"},
-        tags = "@SmokeTest and @Regression",
+       // tags = "@SmokeTest and @Regression",
         monochrome = true
 
 )
