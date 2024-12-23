@@ -2,6 +2,7 @@ package com.sample;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 public class PropertiesReader {
@@ -11,8 +12,16 @@ public class PropertiesReader {
     static {
         try {
             props = new Properties();
-            FileInputStream fileInputStream= new FileInputStream("src/test/resources/config.properties");
-            props.load(fileInputStream);
+            InputStream inputStream= PropertiesReader.class.getClassLoader().getResourceAsStream("config.properties");
+
+            if(inputStream != null){
+                props.load(inputStream);
+            }
+            else {
+                throw new RuntimeException("config.properties file not found in classpath");
+            }
+
+            props.load(inputStream);
             // empty commit
         } catch (IOException e){
             e.printStackTrace();
