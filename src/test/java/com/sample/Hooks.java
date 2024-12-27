@@ -17,6 +17,15 @@ public class Hooks {
     @Before
     public static void setUp(Scenario scenario)
     {
+//        ExtentReportsManager.getExtentReport();
+//
+//        // Create a new ExtentTest instance for the current scenario
+//        ExtentTest extentTest = ExtentReportsManager.getExtentReport().createTest(scenario.getName());
+//
+//        // Set the current ExtentTest to the thread-local
+//        ExtentReportsManager.getExtentTest();
+
+
         System.out.println("Initializing browser...");
         driver = CommonFunctions.launchDriver();
         //driver = CommonFunctions.g
@@ -27,12 +36,21 @@ public class Hooks {
     }
 
     @After
-    public static void tearDown()
+    public static void tearDown(Scenario scenario)
     {
         if(driver!=null) {
             System.out.println("Closing the browser...");
             driver.quit();
             System.out.println("Browser quit!!");
         }
+
+//        if (scenario.isFailed()) {
+//            ExtentReportsManager.takeScreenshot(driver, scenario);
+//        } else {
+//            ExtentReportsManager.getExtentTest().pass("Scenario passed");
+//        }
+//
+//        // Clean up the ExtentTest thread local
+//        ExtentReportsManager.removeExtentTest();
     }
 }
