@@ -16,7 +16,7 @@ public class CommonFunctions {
                 case "chrome":
                     ChromeOptions options = new ChromeOptions();
                     options.setAcceptInsecureCerts(true);
-                    options.addArguments("--headless");
+                    //options.addArguments("--headless");
                     driver = new ChromeDriver(options);
                     break;
                 case "edge":

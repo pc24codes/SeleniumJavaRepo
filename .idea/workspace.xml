@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ed44097-cefd-4a18-95bf-fbff474b79c7" name="Changes" comment="added properties.template file for jenkins compatibility">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sample/DemoQAPageObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sample/ExtentReportsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sample/StepDefinitions/DemoQAStepDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/DemoQATests.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/PropertiesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/PropertiesReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seleniumjava/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seleniumjava/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/CommonFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/CommonFunctions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sample/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sample/Hooks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,36 +74,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.JSONReader.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.All Features in: JavaSelenium.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.All Features in: test.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: LoginFeature.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: Products.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: User Logged in as Standard User.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: User adds products in the cart (1).executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: User adds products in the cart and removes the product (1).executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: User adds products in the cart and removes the product.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: User adds products in the cart.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: User adds the products and buys the products.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: User launches google.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: User logged in as locked out user.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: User sorts the products in the homepage.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.D:/SeleniumC#/JavaSelenium/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;branch__v3&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/SeleniumC#/JavaSelenium/src/main/java/com/seleniumjava/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.JSONReader.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Cucumber Java.All Features in: JavaSelenium.executor": "Run",
+    "Cucumber Java.All Features in: test.executor": "Run",
+    "Cucumber Java.Feature: LoginFeature.executor": "Run",
+    "Cucumber Java.Feature: Products.executor": "Run",
+    "Cucumber Java.Scenario: User Logged in as Standard User.executor": "Run",
+    "Cucumber Java.Scenario: User adds products in the cart (1).executor": "Run",
+    "Cucumber Java.Scenario: User adds products in the cart and removes the product (1).executor": "Run",
+    "Cucumber Java.Scenario: User adds products in the cart and removes the product.executor": "Run",
+    "Cucumber Java.Scenario: User adds products in the cart.executor": "Run",
+    "Cucumber Java.Scenario: User adds the products and buys the products.executor": "Run",
+    "Cucumber Java.Scenario: User fills the form.executor": "Run",
+    "Cucumber Java.Scenario: User launches google.executor": "Run",
+    "Cucumber Java.Scenario: User logged in as locked out user.executor": "Run",
+    "Cucumber Java.Scenario: User sorts the products in the homepage.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.D:/SeleniumC#/JavaSelenium/testng.xml.executor": "Run",
+    "TestNG.TestRunner.executor": "Run",
+    "git-widget-placeholder": "branch__v3",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "D:/SeleniumC#/JavaSelenium/src/main/java/com/seleniumjava/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.editor"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.TestRunner">
+}]]></component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: User fills the form">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.seleniumjava.Main" />
+      <module name="JavaSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seleniumjava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: LoginFeature" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginFeature.feature" />
@@ -106,26 +127,6 @@
       <module name="JavaSelenium" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: LoginFeature" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: User adds products in the cart and removes the product (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginFeature.feature" />
-      <option name="GLUE" value="com.sample" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="JavaSelenium" />
-      <option name="NAME_FILTER" value="^User adds products in the cart and removes the product$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User adds products in the cart and removes the product$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User adds products in the cart and removes the product" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -157,15 +158,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User sorts the products in the homepage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User fills the form" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginFeature.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/DemoQATests.feature" />
       <option name="GLUE" value="com.sample" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="JavaSelenium" />
-      <option name="NAME_FILTER" value="^User sorts the products in the homepage$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User sorts the products in the homepage$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User sorts the products in the homepage" />
+      <option name="NAME_FILTER" value="^User fills the form$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User fills the form$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User fills the form" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -196,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: User fills the form" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="TestNG.TestRunner" />
         <item itemvalue="Cucumber Java.Feature: LoginFeature" />
         <item itemvalue="Cucumber Java.Scenario: User adds the products and buys the products" />
-        <item itemvalue="Cucumber Java.Scenario: User sorts the products in the homepage" />
-        <item itemvalue="Cucumber Java.Scenario: User adds products in the cart and removes the product (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734958353204</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added properties.template file for jenkins compatibility">
+      <option name="closed" value="true" />
+      <created>1734960560306</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1734960560306</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="UnknownFeatures">
